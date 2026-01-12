@@ -39,6 +39,9 @@
 ** these libs are loaded by lua.c and are readily available to any Lua
 ** program
 */
+/* Delta API module (stub). */
+LUAMOD_API int luaopen_delta(lua_State *L);
+
 static const luaL_Reg loadedlibs[] = {
   {LUA_GNAME, luaopen_base},
   {LUA_LOADLIBNAME, luaopen_package},
@@ -50,6 +53,10 @@ static const luaL_Reg loadedlibs[] = {
   {LUA_MATHLIBNAME, luaopen_math},
   {LUA_UTF8LIBNAME, luaopen_utf8},
   {LUA_DBLIBNAME, luaopen_debug},
+
+  /* Non-standard library linked into this executable. */
+  {"delta", luaopen_delta},
+
   {NULL, NULL}
 };
 
