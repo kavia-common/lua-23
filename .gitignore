@@ -40,6 +40,7 @@ venv/
 **/pyvenv.cfg
 **/*/pyvenv.cfg
 
+<<<<<<< Updated upstream
 # Node.js ignorables
 node_modules/
 npm-debug.log
@@ -61,3 +62,11 @@ core.*
 .core
 *.log
 post_process_status.lock
+=======
+testes/libs/all
+
+temp
+lua
+
+logs/
+>>>>>>> Stashed changes
